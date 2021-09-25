@@ -1,0 +1,13 @@
+{
+  "name": "teste-estagio-raccoon",
+  "version": "1.0.0",
+  "description": "Um teste para estagio onde o objetivo era criar um site baseado nas referencias passadas",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Daniel de Olivera",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {}
+}
