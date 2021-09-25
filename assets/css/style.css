@@ -176,6 +176,11 @@ a {
     font-weight: bold;
     color: var(--branco);
     margin-top: 100px;
+    transition: .3s;
+}
+
+.main-home .main-home-top button:hover {
+    background: var(--color2);
 }
 
 .main-home .main-home-bottom {
@@ -419,6 +424,12 @@ a {
 .three-itens .item:nth-child(1) button {
     border: 2px solid var(--color01);
     color: var(--color01);
+    transition: .4s;
+}
+
+.three-itens .item:nth-child(1) button:hover {
+    background-color: var(--color01);
+    color: var(--branco);
 }
 
 .three-itens .item:nth-child(2) h4 {
@@ -428,6 +439,12 @@ a {
 .three-itens .item:nth-child(2) button {
     border: 2px solid var(--color02);
     color: var(--color02);
+    transition: .4s;
+}
+
+.three-itens .item:nth-child(2) button:hover {
+    background-color: var(--color02);
+    color: var(--branco);
 }
 
 
@@ -438,6 +455,12 @@ a {
 .three-itens .item:nth-child(3) button {
     border: 2px solid var(--color03);
     color: var(--color03);
+    transition: .4s;
+}
+
+.three-itens .item:nth-child(3) button:hover {
+    background-color: var(--color03);
+    color: var(--branco);
 }
 
 /* Four Itens -------------------------------------*/
@@ -569,6 +592,11 @@ a {
     background: var(--form-button);
     color: var(--branco);
     font-size: 2em;
+    transition: .3s;
+}
+
+.contato form input[type=submit]:hover {
+    background: var(--color2);
 }
 
 /* Footer */
