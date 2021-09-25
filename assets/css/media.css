@@ -25,30 +25,22 @@
         align-items: center;
     }
     .header-nav-container .header-nav [data-menu="button"] {
+        background: url("../icons/bars-solid.svg");
         display: block;
         cursor: pointer;
         border: none;
-        width: 0;
-        height: 0;
+        width: 35px;
+        height: 40px;
         position: relative;
         z-index: 300;
+        transition: transform .3s;
     }
 
     .header-nav-container .header-nav [data-menu="list"]{
         display: none;
     }
 
-    .header-nav-container .header-nav [data-menu="button"]::before {
-        content: '';
-        display: block;
-        height: 3px;
-        width: 30px;
-        background: #fff;
-        box-shadow: 0 10px #fff, 0 -10px #fff;
-        transition: transform .3s;
-    }
-
-    .header-nav-container .header-nav [data-menu="button"].active::before {
+    .header-nav-container .header-nav [data-menu="button"].active {
         transform: rotate(90deg);
     }
 
