@@ -106,6 +106,7 @@ a {
 
 [data-menu="button"] {
     display: none;
+    color: transparent;
 }
 
 /* Principal Main -------------------------------------*/
