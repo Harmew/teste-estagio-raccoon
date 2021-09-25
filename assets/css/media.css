@@ -182,6 +182,10 @@
         height: 400px;
     }
 
+    .contato form input[type=submit] {
+        font-size: 1.75em;
+    }
+
 }
 
 
@@ -246,6 +250,12 @@
     .contato form {
         margin: 70px auto;
         padding: 25px 30px;
+    }
+
+    /* Form */
+
+    .contato form input[type=submit] {
+        font-size: 1.5em;
     }
 
     /* Footer */
