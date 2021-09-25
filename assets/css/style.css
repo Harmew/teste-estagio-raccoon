@@ -111,7 +111,7 @@ a {
 /* Principal Main -------------------------------------*/
 
 .main-container {
-    background: url("/assets/img/mesa.jpg") no-repeat center center;
+    background: url("../img/mesa-01.jpg") no-repeat center center;
     background-size: cover;
     object-fit: cover;
     position: relative;
@@ -477,7 +477,7 @@ a {
 /* Main Quote -------------------------------------*/
 
 .quote {
-    background: url("/assets/img/pessoas.jpg") no-repeat center center;
+    background: url("../img/pessoas.jpg") no-repeat center center;
     background-size: cover;
     margin: 100px 0 100px 0;
     height: 300px;
