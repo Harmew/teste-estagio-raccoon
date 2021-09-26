@@ -7,7 +7,7 @@ export default class scrollTop {
         this.distance = this.subidaElement.offsetHeight * 0.1;
 
         this.checkDistance = this.checkDistance.bind(this);
-        this.checkDistance = debounce(this.checkDistance.bind(this), 20);
+        this.checkDistance = debounce(this.checkDistance.bind(this), 50);
     }
 
     getDistance() {
