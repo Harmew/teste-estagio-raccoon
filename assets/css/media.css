@@ -102,6 +102,15 @@
 
     }
 
+    /* Lista */
+
+    .objetivos-destaques .item:nth-child(7),
+    .objetivos-destaques .item:nth-child(8), 
+    .objetivos-destaques .item:nth-child(9), 
+    .objetivos-destaques .item:nth-child(10) {
+        display: none;
+    }
+
     /* Tres Principais Itens */
 
     .three-itens .item {
