@@ -64,7 +64,8 @@ a {
 
 .header img {
     padding: 10px 0;
-    height: 75px;
+    height: 50px;
+    display: block;
 }
 
 
@@ -112,7 +113,7 @@ a {
 /* Principal Main -------------------------------------*/
 
 .main-container {
-    background: url("../img/mesa-01.jpg") no-repeat center center;
+    background: url("../img/mesa.jpg") no-repeat center center;
     background-size: cover;
     object-fit: cover;
     position: relative;
@@ -191,9 +192,19 @@ a {
     margin-bottom: 20px;
 }
 
-.main-home .main-home-bottom img {
+.main-home .main-home-bottom .logos-main {
     height: 80px;
     padding: 10px 0;
+}
+
+.main-home .main-home-bottom .logos-main img:nth-child(1) {
+    height: 35px;
+}
+
+.main-home .main-home-bottom .logos-main img:nth-child(2) {
+    margin-left: 5px;
+    height: 35px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(108%) contrast(101%);
 }
 
 .main-home .main-home-buttom div {
@@ -224,7 +235,6 @@ a {
 
 .main-home .main-home-bottom .setinha::before {
     content: '';
-    width: 40;
     height: 3px;
     background: currentColor;
     display: block;
@@ -377,9 +387,27 @@ a {
     justify-content: center;
 }
 
-.three-itens .item img {
+.three-itens .item .item-img {
     grid-area: imagem;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.three-itens .item:first-child .item-img {
+    background-color: var(--color01);
+}
+
+.three-itens .item:nth-child(2) .item-img {
+    background-color: var(--color02);
+}
+
+.three-itens .item:last-child .item-img {
+    background-color: var(--color03);
 }
 
 .three-itens .item h4 {
@@ -387,7 +415,6 @@ a {
     padding: 20px 0;
     grid-area: subtitle;
     text-align: center;
-
 } 
 
 .three-itens .item h4::after {
@@ -539,10 +566,11 @@ a {
     margin: 0 auto;
 }
 
-.contato p {
+.contato h3 {
     color: var(--cinza);
     font-size: 1.70em;
     text-align: center;
+    font-weight: 400;
 }
 
 /* Form */
@@ -622,8 +650,8 @@ a {
     margin-bottom: 10px;
 }
 
-.footer .logos img {
-    width: 180px;
+.footer .logos .itens {
+    height: 50px;
 }
 
 .seta {
