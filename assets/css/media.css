@@ -1,11 +1,10 @@
 @media (max-width: 1200px) {
     .three-itens {
         gap: 80px 20px;
-
     }
-} 
+}
 
-@media (max-width: 950px) { 
+@media (max-width: 950px) {
     /* Header*/
 
     .header {
@@ -33,10 +32,10 @@
         height: 40px;
         position: relative;
         z-index: 300;
-        transition: transform .3s;
+        transition: transform 0.3s;
     }
 
-    .header-nav-container .header-nav [data-menu="list"]{
+    .header-nav-container .header-nav [data-menu="list"] {
         display: none;
     }
 
@@ -61,7 +60,7 @@
         top: 0px;
         left: 0px;
         padding: 80px 0 20px 0;
-        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
     .header-nav-container .header-nav [data-menu="list"] li {
@@ -70,7 +69,7 @@
 
     .header-nav-container .header-nav [data-menu="list"].active {
         display: block;
-        animation: show-right .3s forwards;
+        animation: show-right 0.3s forwards;
     }
 
     /* Principal */
@@ -83,30 +82,29 @@
 
     .objetivos-destaques {
         grid-template-columns: 1fr;
-        gap: 20px 60px ;
+        gap: 20px 60px;
     }
 
     .objetivos-destaques .item {
         grid-template-columns: 1fr 6fr;
         padding: 20px 0;
     }
-    
+
     .objetivos-destaques .item img {
         width: 65px;
         height: 65px;
     }
 
     .objetivos-destaques .item .text-container p:last-child {
-        font-size: .65em;
+        font-size: 0.65em;
         margin: 15px 0;
-
     }
 
     /* Lista */
 
     .objetivos-destaques .item:nth-child(7),
-    .objetivos-destaques .item:nth-child(8), 
-    .objetivos-destaques .item:nth-child(9), 
+    .objetivos-destaques .item:nth-child(8),
+    .objetivos-destaques .item:nth-child(9),
     .objetivos-destaques .item:nth-child(10) {
         display: none;
     }
@@ -114,11 +112,11 @@
     /* Tres Principais Itens */
 
     .three-itens .item {
-        grid-template-columns: 3fr 1fr ;
-        grid-template-areas: 
-        "subtitle" "subtitle"
-        "text" "imagem"
-        "botao""botao";
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "subtitle" "subtitle"
+            "text" "imagem"
+            "botao" "botao";
         padding-bottom: 30px;
         border-bottom: 3px solid var(--cinza-claro);
         width: 100%;
@@ -127,7 +125,7 @@
     .three-itens .item h4 {
         grid-column: span 2;
         text-align: left;
-    } 
+    }
 
     .three-itens .item .item-img {
         width: 100px;
@@ -140,18 +138,18 @@
         width: 50px;
     }
 
-    .three-itens .item  p {
+    .three-itens .item p {
         grid-column: 1 / 2;
         text-align: left;
     }
-    
+
     .three-itens .item h4::after {
         content: none;
     }
 
     .three-itens .item button {
         grid-column: span 2;
-        margin: 30px 0 0 0 ;
+        margin: 30px 0 0 0;
     }
 
     .three-itens {
@@ -187,27 +185,24 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .quote {
         height: 400px;
     }
 
-    .contato form input[type=submit] {
+    .contato form input[type="submit"] {
         font-size: 1.75em;
     }
-
 }
 
-
-@media (max-width: 550px){
-
+@media (max-width: 550px) {
     /* Principal */
 
-    .main-home .main-home-top  h1 {
+    .main-home .main-home-top h1 {
         font-size: 3.75em;
     }
-    
-    .main-home .main-home-top  p {
+
+    .main-home .main-home-top p {
         font-size: 2em;
     }
 
@@ -236,13 +231,13 @@
         border: 4px solid var(--cinza-claro);
     }
 
-    .four-itens .item:nth-child(1), 
-    .four-itens .item:nth-child(2), 
+    .four-itens .item:nth-child(1),
+    .four-itens .item:nth-child(2),
     .four-itens .item:nth-child(3) {
         border-bottom: 4px solid var(--cinza-claro);
     }
 
-    .four-itens .item:nth-child(1), 
+    .four-itens .item:nth-child(1),
     .four-itens .item:nth-child(3) {
         border-right: none;
     }
@@ -264,34 +259,40 @@
 
     /* Form */
 
-    .contato form input[type=submit] {
+    .contato form input[type="submit"] {
         font-size: 1.5em;
     }
 
     /* Footer */
-    
+
     .footer .logos .itens {
         height: 60px;
     }
 }
 
-@media (max-width: 350px){ 
+@media (max-width: 350px) {
     /* Home*/
+
     .main-home .main-home-top button {
         width: 200px;
     }
+
     /* Objetivos */
+
     .objetivos-destaques .item {
         grid-template-columns: 1fr;
     }
+
     .objetivos-destaques .item .text-container {
         align-items: center;
     }
+
     .objetivos-destaques .item .text-container p:last-child {
         text-align: center;
         padding: 0 0 0 0;
         max-width: 90%;
     }
+
     .four-itens .item {
         height: 250px;
     }
@@ -305,6 +306,4 @@
     .quote p {
         font-size: 2em;
     }
-
 }
-

@@ -1,9 +1,9 @@
 export default class ScrollDown {
     constructor(seta, scroll) {
-        this.setinha = document.querySelector(seta)
-        this.scrolar = document.querySelector(scroll)
+        this.setinha = document.querySelector(seta);
+        this.scrolar = document.querySelector(scroll);
 
-        this.descer = this.descer.bind(this)
+        this.descer = this.descer.bind(this);
     }
 
     descer() {
@@ -11,12 +11,13 @@ export default class ScrollDown {
     }
 
     addEvent() {
-        this.setinha.addEventListener('click', this.descer)
+        this.setinha.addEventListener("click", this.descer);
     }
 
-
     init() {
-        this.addEvent()
-        return this
+        if (this.setinha && this.scrolar) {
+            this.addEvent();
+        }
+        return this;
     }
 }
